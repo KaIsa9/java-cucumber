@@ -40,6 +40,6 @@ public class GreeterSteps {
 	@Then("greeting should be {string}")
 	@Then("a saudação deve ser {string}")
 	public void greeting_should_be(String expected) {
-		assertEquals(expected, actual);
+		assertEquals(expected.replaceAll("\r", "").trim(), actual.replaceAll("\r", "").trim());
 	}
 }

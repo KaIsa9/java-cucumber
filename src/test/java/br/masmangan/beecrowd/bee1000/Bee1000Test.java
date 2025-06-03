@@ -25,7 +25,14 @@ import io.cucumber.junit.CucumberOptions;
 import org.junit.runner.RunWith;
 
 @RunWith(Cucumber.class)
-@CucumberOptions(plugin = {"pretty"})
-public class RunCucumberTest {
+@CucumberOptions(plugin = {"pretty"
+//        ,"html:target/cucumber.html"
+        }
+//        , snippets = CucumberOptions.SnippetType.CAMELCASE
+//        , features = "src/test/resources/features/bee1000"
+//        ,. glue = "br.masmangan.beecrowd.bee1000")
+//         , tags = "@domain"
+                )
+public class Bee1000Test {
 
 }

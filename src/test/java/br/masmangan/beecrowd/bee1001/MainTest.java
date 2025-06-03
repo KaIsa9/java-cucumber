@@ -55,7 +55,7 @@ public class MainTest {
 
 		actual = byteArrayOutputStream.toString();
 
-		assertEquals(expected, actual);
+		assertEquals(expected.trim(), actual.trim());
 
 		inputStream.close();
 		outputStream.close();

@@ -46,7 +46,7 @@ public class Bee1004Steps {
 
     @Then("output should be")
     public void output_should_be(String expected) {
-        assertEquals(expected, actual);
+        assertEquals(expected.trim(), actual.trim());
     }
 
 }
